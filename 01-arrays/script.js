@@ -48,13 +48,9 @@ console.log('Elenco insegnanti aggiornato cancellando l\'ultimo insegnante : ', 
 
 const firstTeacher = teachers[0];
 
-// Parto a copiare l'array dall'indice 1 in poi, (l'indice 0 l'ho già salvato)
 for (let i = 0; i < teachers.length; i++) {
-    // Creo un nuovo array di appoggio per contenere i restanti
-    const remainingTeachers = [];
 
-    remainingTeachers[i] = teachers[i+1];
-    teachers[i] = remainingTeachers[i];
+    teachers[i] = teachers[i+1];
 }
 
 // Se non lo facessi rimarrebbe della stessa lunghezza con un valore undefined come ultimo valore dell'array
