@@ -56,7 +56,15 @@ console.log('Elenco insegnanti senza Ed che è stato licenziato: ', teachers);
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 
-const isFabioPresent = null;
+let isFabioPresent = false;
+
+for (let i=0; i < teachers.length; i++){
+  if (teachers[i] === 'Fabio') {
+        isFabioPresent = true;
+    }
+}
+
+console.log('Fabio c\'era nell\'elenco?: ', isFabioPresent);
 
 //-----------------------------------------------------------------------------------------------------//
 
