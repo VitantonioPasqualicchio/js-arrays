@@ -70,6 +70,17 @@ console.log('Fabio c\'era nell\'elenco?: ', isFabioPresent);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 
-const teachersString = null;
+let teachersString = '';
+
+for (let i=0; i < teachers.length; i++) {
+    teachersString += teachers[i];
+
+    // Se NON è l'ultimo elemento, aggiungo virgola e spazio
+    if (i < teachers.length - 1) {
+        teachersString += ', ';
+    }
+}
+
+console.log('Elenco insegnanti concatenati in una stringa unica con virgole: ', teachersString);
 
 //-----------------------------------------------------------------------------------------------------//
