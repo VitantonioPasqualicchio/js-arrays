@@ -37,7 +37,19 @@ console.log('Elenco con solo insegnanti con un nome di lunghezza >= a 5 caratter
 
 // 3. Rimuovi 'Ed' dall'array teachers
 
+let found = false
 
+for (let i=0; i < teachers.length; i++){
+  if (found === false && teachers[i] === 'Ed') {
+        found = true;
+        teachers[i] = teachers[i+1]
+    }
+  if (found === true) teachers[i] = teachers[i+1]
+}
+
+teachers.length = teachers.length - 1;
+
+console.log('Elenco insegnanti senza Ed che è stato licenziato: ', teachers);
 
 //-----------------------------------------------------------------------------------------------------//
 
