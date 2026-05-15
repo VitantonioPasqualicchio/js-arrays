@@ -63,6 +63,14 @@ console.log('Nuovo elenco insegnanti aggiornato:', teachers);
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
+const initialLength = teachers.length; // Salviamo la lunghezza prima di modificarla
+
+for (let i = 0; i <= initialLength; i++) {
+    if (i === initialLength) teachers[i] = 'Vanessa';
+}
+
+console.log('Elenco insegnanti aggiornato aggiungendo Vanessa alla fine:', teachers);
+
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
