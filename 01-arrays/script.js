@@ -101,4 +101,20 @@ for (let i=0; i < teachers.length; i++){
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+
+/* TEST PER DEBUG
+verifico se con un array vuoto mi da true
+
+const test = [];
+
+// Il confronto (teachers.length === 0) restituisce true o false
+const isTeachersEmpty = test.length === 0;
+
+console.log('L\'array è vuoto?', isTeachersEmpty); */
+
+// Il confronto (teachers.length === 0) restituisce true o false
+const isTeachersEmpty = teachers.length === 0;
+
+console.log('L\'array è vuoto?', isTeachersEmpty);
+
+//-----------------------------------------------------------------------------------------------------//
