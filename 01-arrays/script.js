@@ -30,17 +30,19 @@ console.log('Elenco insegnanti aggiornato sostituendo il quinto insegnante con P
 for (let i=0; i < teachers.length; i++){
   if (i === (teachers.length - 1)) {
         const lastTeacher = teachers[i];
-        teachers[i] = '';
         console.log('Ultimo insegnante salvato: ', lastTeacher);
     }
 }
+teachers.length = teachers.length - 1;
 
 console.log('Elenco insegnanti aggiornato cancellando l\'ultimo insegnante : ', teachers);
 
 //-----------------------------------------------------------------------------------------------------//
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = null;
+
+
+// const firstTeacher = null;
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 
