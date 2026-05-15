@@ -10,18 +10,34 @@ const teachers = [
 
 console.log('Elenco totale insegnanti: ', teachers);
 
+//-----------------------------------------------------------------------------------------------------//
+
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
 const fourthTeacher = teachers[3];
 
 console.log('Il quarto insegnante è :', fourthTeacher);
 
+//-----------------------------------------------------------------------------------------------------//
+
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
 teachers[4] = 'Patrick';
 console.log('Elenco insegnanti aggiornato sostituendo il quinto insegnante con Patrick: ', teachers);
 
+//-----------------------------------------------------------------------------------------------------//
+
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher = null;
+for (let i=0; i < teachers.length; i++){
+  if (i === (teachers.length - 1)) {
+        const lastTeacher = teachers[i];
+        teachers[i] = '';
+        console.log('Ultimo insegnante salvato: ', lastTeacher);
+    }
+}
+
+console.log('Elenco insegnanti aggiornato cancellando l\'ultimo insegnante : ', teachers);
+
+//-----------------------------------------------------------------------------------------------------//
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
 const firstTeacher = null;
