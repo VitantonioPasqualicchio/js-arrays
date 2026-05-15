@@ -71,7 +71,21 @@ for (let i = 0; i <= initialLength; i++) {
 
 console.log('Elenco insegnanti aggiornato aggiungendo Vanessa alla fine:', teachers);
 
+//-----------------------------------------------------------------------------------------------------//
+
 // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+
+teachers.length = teachers.length + 1; // Creo uno spazio vuoto in fondo
+
+// Ciclo che parte dalla fine per non sovrascrivere gli elementi che sposta "a destra"
+for (let i = teachers.length - 1; i > 0; i--) {
+    teachers[i] = teachers[i - 1]; // Spostiamo a destra
+}
+
+teachers[0] = 'Sarah';
+console.log('Elenco insegnanti aggiornato aggiungendo Sarah all\'inizio:', teachers);
+
+//-----------------------------------------------------------------------------------------------------//
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
