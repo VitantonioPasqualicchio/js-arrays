@@ -89,7 +89,15 @@ console.log('Elenco insegnanti aggiornato aggiungendo Sarah all\'inizio:', teach
 
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+
+for (let i=0; i < teachers.length; i++){
+  if (teachers[i] === 'Lewis') {
+        const lewisIndex = i;
+        console.log('Indice dell\'elemento contentente Lewis: ', lewisIndex);
+    }
+}
+
+//-----------------------------------------------------------------------------------------------------//
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
